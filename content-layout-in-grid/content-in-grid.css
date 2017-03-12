@@ -1,0 +1,42 @@
+/* Grid Layout */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+    grid-gap: 2vw;
+}
+
+@media (min-width: 641px) {
+   [class*="col-"] > section .content {
+        grid-template-columns: auto;
+    }
+}
+
+@media(min-width: 768px) {
+    main {
+        grid-template-columns: auto auto auto;
+    }
+}
+
+
+/* Content Layout */
+
+.content {
+    display: grid;
+}
+
+.media {
+    order: -1;
+}
+
+@media (min-width: 641px) {
+    .content {
+        grid-template-columns: minmax(auto, 500px) auto;
+        grid-column-gap: 2vw;
+    }
+    
+    .text {
+        display: grid;
+        align-content: start;
+    }
+}

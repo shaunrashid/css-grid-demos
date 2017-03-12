@@ -1,0 +1,19 @@
+.content {
+    display: grid;
+}
+
+.media {
+    order: -1;
+}
+
+@media (min-width: 641px) { 
+    .content {
+        grid-template-columns: minmax(auto, 500px) auto;
+        grid-column-gap: 2vw;
+    }
+    
+    .text {
+        display: grid;
+        align-content: start;
+    }
+}

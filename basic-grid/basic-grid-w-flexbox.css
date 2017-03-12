@@ -1,0 +1,17 @@
+main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+main > section {
+    margin: 1vw;
+    min-width: 300px;
+    max-width: 450px;
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    main > section {
+        width: calc(33.3% - 2vw);
+    }    
+}
