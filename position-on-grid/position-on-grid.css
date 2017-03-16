@@ -1,0 +1,13 @@
+main {
+    background: inherit;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2vw;
+}
+
+section:nth-child(4) {
+    background: peachpuff;
+    border-color: black;
+    grid-column-start: 3;
+    grid-row-start: 3;
+}

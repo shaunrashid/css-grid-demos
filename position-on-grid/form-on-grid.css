@@ -1,0 +1,32 @@
+form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 2vw;
+}
+
+button {
+    grid-column-start: 1;
+}
+
+.last-name {
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+
+.zip-code {
+    grid-column-start: 2;
+}
+
+
+/* Make it look pretty */
+
+form {
+    padding: 4vw;
+}
+
+button {
+    padding: 1vw;
+    background-color: azure;
+    font-size: 125%;
+    font-weight: bold;
+}
