@@ -3,6 +3,7 @@
 }
 
 .media {
+    max-width: 500px;
     order: -1;
 }
 

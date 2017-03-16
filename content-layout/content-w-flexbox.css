@@ -16,5 +16,6 @@
 @media (min-width: 641px) {
     .text {
         margin-left: 2vw;
+        max-width: 50%;
     }
 }

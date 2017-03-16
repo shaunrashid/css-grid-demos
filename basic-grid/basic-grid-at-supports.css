@@ -1,0 +1,35 @@
+@supports (display: grid) {
+    main {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(300px, auto));
+        grid-gap: 2vw;
+    }
+
+    @media(min-width: 768px) {
+        main {
+            grid-template-columns: auto auto auto;
+        }
+    }
+}
+
+@supports not (display: grid) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        background: #900;
+    }
+
+    main > section {
+        margin: 1vw;
+        min-width: 300px;
+        max-width: 450px;
+        width: 100%;
+        flex: 1 1 auto;
+    }
+
+    @media (min-width: 640px) {
+        main > section {
+            width: calc(33.3% - 2vw);
+        }    
+    }
+}
